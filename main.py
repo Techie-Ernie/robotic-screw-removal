@@ -24,8 +24,6 @@ def actuate_screwdriver(ser):
     ser.write(b"S")
     ser.write(b"U")
 
-
-# Import saved calibration (H)
 def load_calib(path=CALIB_FILE):
     data = np.load(path)
     return data["H"]
